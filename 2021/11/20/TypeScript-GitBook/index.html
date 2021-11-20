@@ -4,8 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, MUC NLP">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="TypeScript-GitBook, MUC NLP">
+    <meta name="description" content="TypeScript - GitBook1.TypeScript环境搭建1.1 安装Node.js推荐使用nvm对Node.js进行管理。
+Windows 10：
+
+NVM for Windows 传送门
+
+Linux 传送门
+1curl ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +23,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Chenyang Zhou - Blog</title>
+    <title>TypeScript-GitBook | Chenyang Zhou - Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -310,12 +316,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">TypeScript-GitBook</h1>
                 </div>
             </div>
         </div>
@@ -429,12 +435,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/TypeScript/">
+                                <span class="chip bg-color">TypeScript</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Web%E5%89%8D%E7%AB%AF/" class="post-category">
+                                Web前端
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -464,19 +483,119 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h1 id="TypeScript-GitBook"><a href="#TypeScript-GitBook" class="headerlink" title="TypeScript - GitBook"></a>TypeScript - GitBook</h1><h2 id="1-TypeScript环境搭建"><a href="#1-TypeScript环境搭建" class="headerlink" title="1.TypeScript环境搭建"></a>1.TypeScript环境搭建</h2><h3 id="1-1-安装Node-js"><a href="#1-1-安装Node-js" class="headerlink" title="1.1 安装Node.js"></a>1.1 安装Node.js</h3><p>推荐使用nvm对Node.js进行管理。</p>
+<p>Windows 10：</p>
+<ul>
+<li>NVM for Windows <a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">传送门</a></li>
+</ul>
+<p>Linux <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm#installing-and-updating">传送门</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>使用cURL和 Wget 命令都可以。</p>
+<p>修改环境变量 - (<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>).</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>macOS Monterey version 12.10.1 使用brew进行安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nvm</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>安装Node.js：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install v17.1.0</span><br></pre></td></tr></table></figure>
+
+<p>检查安装是否成功：(无报错即创建成功)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-安装TypeScript"><a href="#1-2-安装TypeScript" class="headerlink" title="1.2 安装TypeScript"></a>1.2 安装TypeScript</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure>
+
+<p>检查是否安装成功：(无报错即创建成功)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-使用tsc对ts文件进行编译"><a href="#1-3-使用tsc对ts文件进行编译" class="headerlink" title="1.3 使用tsc对ts文件进行编译"></a>1.3 使用tsc对ts文件进行编译</h3><p>以macOS为例</p>
+<ul>
+<li><p>创建ts文件 - touch 01_hello.ts</p>
+<ul>
+<li>编辑内容并保存 -  console.log(‘Hello TS’);</li>
+</ul>
+</li>
+<li><p>使用tsc编译ts文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc 01_hello.ts</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><img src="/Users/crius/Desktop/ChenyangZhou1994.github.io/source/imgs/typescript/ts-1.3-fig1.jpg" alt="1.3-fig1"></p>
+</li>
+</ul>
+<h2 id="2-基本类型"><a href="#2-基本类型" class="headerlink" title="2. 基本类型"></a>2. 基本类型</h2><h3 id="2-1-类型声明"><a href="#2-1-类型声明" class="headerlink" title="2.1 类型声明"></a>2.1 类型声明</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明一个a变量，指定为number</span></span><br><span class="line"><span class="keyword">let</span> a: <span class="built_in">number</span>;</span><br><span class="line"><span class="comment">//a只能被赋值数字类型</span></span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">a = <span class="number">1.1</span></span><br><span class="line">a = <span class="string">&#x27;1.5&#x27;</span> <span class="comment">//报错</span></span><br><span class="line"><span class="comment">//声明一个b变量，指定为string</span></span><br><span class="line"><span class="keyword">let</span> b: <span class="built_in">string</span>;</span><br><span class="line">b = <span class="string">&#x27;1.5&#x27;</span></span><br><span class="line">b = <span class="number">1.5</span> <span class="comment">//报错</span></span><br><span class="line"><span class="comment">//声明变量直接赋值</span></span><br><span class="line"><span class="keyword">let</span> c: <span class="built_in">boolean</span> = <span class="literal">true</span>;</span><br><span class="line">c = <span class="number">123</span> <span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//指定参数和返回值类型</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a: <span class="built_in">number</span>, b: <span class="built_in">number</span></span>) : <span class="title">number</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sum(<span class="number">123</span>, <span class="number">456</span>)</span><br><span class="line">sum(<span class="number">123</span>, <span class="string">&#x27;456&#x27;</span>) <span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-基础类型"><a href="#2-2-基础类型" class="headerlink" title="2.2 基础类型"></a>2.2 基础类型</h3><table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">例子</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">number</td>
+<td align="center">1, -1, 1.5</td>
+<td align="center">任意数字</td>
+</tr>
+<tr>
+<td align="center">string</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">字面量</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">any</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">unknown</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Void</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Never</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Object</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Array</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Tuple</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Enum</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 
                 
             </div>
@@ -503,7 +622,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/20/hello-world/">http://example.com/2021/11/20/hello-world/</a>
+                    <a href="http://example.com/2021/11/20/TypeScript-GitBook/">http://example.com/2021/11/20/TypeScript-GitBook/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -540,7 +659,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/TypeScript/">
+                                    <span class="chip bg-color">TypeScript</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -714,13 +837,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/11/20/NumPy-GitBook/">
+                <a href="/2021/11/20/Pandas-GitBook/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="NumPy-GitBook">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Pandas-GitBook">
                         
-                        <span class="card-title">NumPy-GitBook</span>
+                        <span class="card-title">Pandas-GitBook</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -748,16 +871,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/20/hello-world/">
+                <a href="/2021/11/20/NumPy-GitBook/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="NumPy-GitBook">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">NumPy-GitBook</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -778,7 +901,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
