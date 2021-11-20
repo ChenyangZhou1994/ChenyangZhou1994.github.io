@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: Chenyang Zhou - Blog
+subtitle: NLP
+description: 中央民族大学| 语言学及应用语言学| 自然语言处理
+keywords: MUC NLP
+author: ChenyangZhou
+language: zh-CN
 timezone: ''
 
 # URL
@@ -62,7 +62,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 12
   order_by: -date
 
 # Category & Tag
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,3 +106,20 @@ deploy:
   repository: https://github.com/ChenyangZhou1994/ChenyangZhou1994.github.io
   branch: main
 
+postInfo:
+  date: true
+  update: false
+  wordCount: true # 设置文章字数统计为 true.
+  totalCount: true # 设置站点文章总字数统计为 true.
+  min2read: true # 阅读时长.
+  readCount: true # 阅读次数.
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
