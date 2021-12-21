@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-20T07:38:47.941Z</updated>
+  <updated>2021-12-21T16:24:51.069Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,121 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于词典的分词方法</title>
+    <link href="http://example.com/2021/12/21/%E5%9F%BA%E4%BA%8E%E8%AF%8D%E5%85%B8%E7%9A%84%E5%88%86%E8%AF%8D%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2021/12/21/%E5%9F%BA%E4%BA%8E%E8%AF%8D%E5%85%B8%E7%9A%84%E5%88%86%E8%AF%8D%E6%96%B9%E6%B3%95/</id>
+    <published>2021-12-21T03:03:36.000Z</published>
+    <updated>2021-12-21T16:24:51.069Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;基于词典分词算法&quot;&gt;&lt;a href=&quot;#基于词典分词算法&quot; class=&quot;headerlink&quot; title=&quot;基于词典分词算法&quot;&gt;&lt;/a&gt;基于词典分词算法&lt;/h1&gt;&lt;h2 id=&quot;1-最大匹配法&quot;&gt;&lt;a href=&quot;#1-最大匹配法&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="NLP" scheme="http://example.com/categories/NLP/"/>
+    
+    
+    <category term="word-segmentation" scheme="http://example.com/tags/word-segmentation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode-1-Two-Sum</title>
+    <link href="http://example.com/2021/11/20/LeetCode-1-Two-Sum/"/>
+    <id>http://example.com/2021/11/20/LeetCode-1-Two-Sum/</id>
+    <published>2021-11-20T12:52:55.000Z</published>
+    <updated>2021-11-20T12:52:55.323Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++17-GitBook</title>
+    <link href="http://example.com/2021/11/20/C-17-GitBook/"/>
+    <id>http://example.com/2021/11/20/C-17-GitBook/</id>
+    <published>2021-11-20T12:52:32.000Z</published>
+    <updated>2021-11-20T12:52:33.000Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python3-GitBook</title>
+    <link href="http://example.com/2021/11/20/Python3-GitBook/"/>
+    <id>http://example.com/2021/11/20/Python3-GitBook/</id>
+    <published>2021-11-20T12:51:50.000Z</published>
+    <updated>2021-11-20T12:51:50.978Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Pandas-GitBook</title>
+    <link href="http://example.com/2021/11/20/Pandas-GitBook/"/>
+    <id>http://example.com/2021/11/20/Pandas-GitBook/</id>
+    <published>2021-11-20T12:51:39.000Z</published>
+    <updated>2021-11-20T12:51:39.556Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TypeScript-GitBook</title>
+    <link href="http://example.com/2021/11/20/TypeScript-GitBook/"/>
+    <id>http://example.com/2021/11/20/TypeScript-GitBook/</id>
+    <published>2021-11-20T12:51:30.000Z</published>
+    <updated>2021-11-20T14:30:35.822Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;TypeScript-GitBook&quot;&gt;&lt;a href=&quot;#TypeScript-GitBook&quot; class=&quot;headerlink&quot; title=&quot;TypeScript - GitBook&quot;&gt;&lt;/a&gt;TypeScript - GitBook&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Web前端" scheme="http://example.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="TypeScript" scheme="http://example.com/tags/TypeScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NumPy-GitBook</title>
+    <link href="http://example.com/2021/11/20/NumPy-GitBook/"/>
+    <id>http://example.com/2021/11/20/NumPy-GitBook/</id>
+    <published>2021-11-20T12:51:08.000Z</published>
+    <updated>2021-11-20T12:51:08.818Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

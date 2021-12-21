@@ -366,10 +366,52 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/TypeScript/" title="TypeScript: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="TypeScript" style="background-color: #F9EBEA;">TypeScript
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/word-segmentation/" title="word-segmentation: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="word-segmentation" style="background-color: #F5EEF8;">word-segmentation
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"TypeScript","weight":1,"link":"/tags/TypeScript/"},{"text":"word-segmentation","weight":1,"link":"/tags/word-segmentation/"}], {
+        autoResize: true
+    });
+</script>
 
     
 
