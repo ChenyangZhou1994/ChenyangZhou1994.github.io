@@ -4,14 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TypeScript-GitBook, MUC NLP">
+    <meta name="keywords" content="TypeScript-GitBook, NLP,CV,Python">
     <meta name="description" content="TypeScript - GitBook1.TypeScript环境搭建1.1 安装Node.js推荐使用nvm对Node.js进行管理。
 Windows 10：
 
 NVM for Windows 传送门
 
 Linux 传送门
-1curl ">
+curl -">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +23,7 @@ Linux 传送门
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>TypeScript-GitBook | Chenyang Zhou - Blog</title>
+    <title>TypeScript-GitBook | ChenyangZhou - Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -36,7 +36,7 @@ Linux 传送门
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Chenyang Zhou - Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="ChenyangZhou - Blog" type="application/atom+xml">
 </head>
 
 
@@ -51,7 +51,7 @@ Linux 传送门
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Chenyang Zhou - Blog</span>
+                    <span class="logo-span">ChenyangZhou - Blog</span>
                 </a>
             </div>
             
@@ -150,7 +150,7 @@ Linux 传送门
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Chenyang Zhou - Blog</div>
+        <div class="logo-name">ChenyangZhou - Blog</div>
         <div class="logo-desc">
             
             中央民族大学| 语言学及应用语言学| 自然语言处理
@@ -478,6 +478,9 @@ Linux 传送门
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -489,27 +492,28 @@ Linux 传送门
 <li>NVM for Windows <a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">传送门</a></li>
 </ul>
 <p>Linux <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm#installing-and-updating">传送门</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">curl -o- https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;nvm-sh&#x2F;nvm&#x2F;v0.39.0&#x2F;install.sh | bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget -qO- https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;nvm-sh&#x2F;nvm&#x2F;v0.39.0&#x2F;install.sh | bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>使用cURL和 Wget 命令都可以。</p>
 <p>修改环境变量 - (<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>).</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;/.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;/nvm&quot;)&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot; # This loads nvm</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">export NVM_DIR&#x3D;&quot;$([ -z &quot;$&#123;XDG_CONFIG_HOME-&#125;&quot; ] &amp;&amp; printf %s &quot;$&#123;HOME&#125;&#x2F;.nvm&quot; || printf %s &quot;$&#123;XDG_CONFIG_HOME&#125;&#x2F;nvm&quot;)&quot;
+[ -s &quot;$NVM_DIR&#x2F;nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR&#x2F;nvm.sh&quot; # This loads nvm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>macOS Monterey version 12.10.1 使用brew进行安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nvm</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">brew install nvm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>安装Node.js：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install v17.1.0</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">nvm install v17.1.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>检查安装是否成功：(无报错即创建成功)</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">node -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="1-2-安装TypeScript"><a href="#1-2-安装TypeScript" class="headerlink" title="1.2 安装TypeScript"></a>1.2 安装TypeScript</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure>
+<h3 id="1-2-安装TypeScript"><a href="#1-2-安装TypeScript" class="headerlink" title="1.2 安装TypeScript"></a>1.2 安装TypeScript</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">npm install -g typescript<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>检查是否安装成功：(无报错即创建成功)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-she" data-language="she"><code class="language-she">tsc -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="1-3-使用tsc对ts文件进行编译"><a href="#1-3-使用tsc对ts文件进行编译" class="headerlink" title="1.3 使用tsc对ts文件进行编译"></a>1.3 使用tsc对ts文件进行编译</h3><p>以macOS为例</p>
 <ul>
@@ -519,13 +523,33 @@ Linux 传送门
 </ul>
 </li>
 <li><p>使用tsc编译ts文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc 01_hello.ts</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-she" data-language="she"><code class="language-she">tsc 01_hello.ts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>运行结果：</p>
 <p><img src="/Users/crius/Desktop/ChenyangZhou1994.github.io/source/imgs/typescript/ts-1.3-fig1.jpg" alt="1.3-fig1"></p>
 </li>
 </ul>
-<h2 id="2-基本类型"><a href="#2-基本类型" class="headerlink" title="2. 基本类型"></a>2. 基本类型</h2><h3 id="2-1-类型声明"><a href="#2-1-类型声明" class="headerlink" title="2.1 类型声明"></a>2.1 类型声明</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明一个a变量，指定为number</span></span><br><span class="line"><span class="keyword">let</span> a: <span class="built_in">number</span>;</span><br><span class="line"><span class="comment">//a只能被赋值数字类型</span></span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">a = <span class="number">1.1</span></span><br><span class="line">a = <span class="string">&#x27;1.5&#x27;</span> <span class="comment">//报错</span></span><br><span class="line"><span class="comment">//声明一个b变量，指定为string</span></span><br><span class="line"><span class="keyword">let</span> b: <span class="built_in">string</span>;</span><br><span class="line">b = <span class="string">&#x27;1.5&#x27;</span></span><br><span class="line">b = <span class="number">1.5</span> <span class="comment">//报错</span></span><br><span class="line"><span class="comment">//声明变量直接赋值</span></span><br><span class="line"><span class="keyword">let</span> c: <span class="built_in">boolean</span> = <span class="literal">true</span>;</span><br><span class="line">c = <span class="number">123</span> <span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//指定参数和返回值类型</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a: <span class="built_in">number</span>, b: <span class="built_in">number</span></span>) : <span class="title">number</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sum(<span class="number">123</span>, <span class="number">456</span>)</span><br><span class="line">sum(<span class="number">123</span>, <span class="string">&#x27;456&#x27;</span>) <span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-基本类型"><a href="#2-基本类型" class="headerlink" title="2. 基本类型"></a>2. 基本类型</h2><h3 id="2-1-类型声明"><a href="#2-1-类型声明" class="headerlink" title="2.1 类型声明"></a>2.1 类型声明</h3><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token comment">//声明一个a变量，指定为number</span>
+<span class="token keyword">let</span> a<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token comment">//a只能被赋值数字类型</span>
+a <span class="token operator">=</span> <span class="token number">10</span>
+a <span class="token operator">=</span> <span class="token number">1.1</span>
+a <span class="token operator">=</span> <span class="token string">'1.5'</span> <span class="token comment">//报错</span>
+<span class="token comment">//声明一个b变量，指定为string</span>
+<span class="token keyword">let</span> b<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+b <span class="token operator">=</span> <span class="token string">'1.5'</span>
+b <span class="token operator">=</span> <span class="token number">1.5</span> <span class="token comment">//报错</span>
+<span class="token comment">//声明变量直接赋值</span>
+<span class="token keyword">let</span> c<span class="token operator">:</span> <span class="token builtin">boolean</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+c <span class="token operator">=</span> <span class="token number">123</span> <span class="token comment">//报错</span>
+
+<span class="token comment">//指定参数和返回值类型</span>
+<span class="token keyword">function</span> <span class="token function">sum</span><span class="token punctuation">(</span>a<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token builtin">number</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">,</span> <span class="token number">456</span><span class="token punctuation">)</span>
+<span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">,</span> <span class="token string">'456'</span><span class="token punctuation">)</span> <span class="token comment">//报错</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="2-2-基础类型"><a href="#2-2-基础类型" class="headerlink" title="2.2 基础类型"></a>2.2 基础类型</h3><table>
 <thead>
@@ -622,7 +646,7 @@ Linux 传送门
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/20/TypeScript-GitBook/">http://example.com/2021/11/20/TypeScript-GitBook/</a>
+                    <a href="https://chenyangzhou1994.github.io/2021/11/20/TypeScript-GitBook/">https://chenyangzhou1994.github.io/2021/11/20/TypeScript-GitBook/</a>
                 </span>
             </div>
             <div class="reprint__notice">

@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Chenyang Zhou - Blog
-subtitle: NLP
+title: ChenyangZhou - Blog
+subtitle: NLP & CV
 description: 中央民族大学| 语言学及应用语言学| 自然语言处理
-keywords: MUC NLP
+keywords: [NLP, CV, Python]
 author: ChenyangZhou
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://chenyangzhou1994.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -51,7 +51,7 @@ highlight:
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -106,6 +106,7 @@ deploy:
   repository: https://github.com/ChenyangZhou1994/ChenyangZhou1994.github.io
   branch: main
 
+# 文章字数统计插件
 postInfo:
   date: true
   update: false
@@ -123,3 +124,28 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# Website start time.
+# 站点运行开始时间. 
+time: 
+  enable: true
+  year: 2021 
+  month: 12
+  date: 01
+  hour: 00
+  minute: 00
+  second: 00
+
+# 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
+indexbtn: 
+  enable: true 
+  name: Github 
+  icon: fab fa-github-alt
+  url: https://github.com/ChenyangZhou1994/
+
+# 配置首页显示”梦想“的语句
+dream:
+  enable: true
+  showTitle: true
+  title: 我的梦想
+  text: Nothing is impossible.
