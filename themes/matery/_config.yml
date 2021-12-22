@@ -73,8 +73,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 实现自己的梦想。
+  title: Dream
+  text: Never rested on your laurels.
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -170,7 +170,7 @@ code:
 reward:
   enable: true
   title: 你的赏识是我前进的动力
-  wechat: /medias/reward/wechat.png
+  wechat: /medias/reward/wechat.jpg
   alipay: /medias/reward/alipay.jpg
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
