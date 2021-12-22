@@ -106,14 +106,6 @@ deploy:
   repository: https://github.com/ChenyangZhou1994/ChenyangZhou1994.github.io
   branch: main
 
-# 文章字数统计插件
-postInfo:
-  date: true
-  update: false
-  wordCount: true # 设置文章字数统计为 true.
-  totalCount: true # 设置站点文章总字数统计为 true.
-  min2read: true # 阅读时长.
-  readCount: true # 阅读次数.
 
 feed:
   type: atom
@@ -124,28 +116,3 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-
-# Website start time.
-# 站点运行开始时间. 
-time: 
-  enable: true
-  year: 2021 
-  month: 12
-  date: 01
-  hour: 00
-  minute: 00
-  second: 00
-
-# 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
-indexbtn: 
-  enable: true 
-  name: Github 
-  icon: fab fa-github-alt
-  url: https://github.com/ChenyangZhou1994/
-
-# 配置首页显示”梦想“的语句
-dream:
-  enable: true
-  showTitle: true
-  title: 我的梦想
-  text: Nothing is impossible.
